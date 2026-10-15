@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "method": "Explicit source allowlist, clean PNG pixel re-encoding, filename/text/UTF-16/binary-string and nested-ZIP checks",
+  "files_checked": 10,
+  "image_metadata_checked": 4,
+  "issues": [],
+  "excluded_categories": [
+    "accounts and credentials",
+    "chat screenshots and conversations",
+    "runtime profiles and logs",
+    "personal absolute paths",
+    "pet account and upload records"
+  ],
+  "public_github_username": "GitHub account attribution remains public on the hosting platform."
+}

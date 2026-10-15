@@ -1,0 +1,68 @@
+{
+  "ok": true,
+  "encoded_bytes": 1894096,
+  "sha256": "a7a2936ad515bd4597e0bc67fdcf0f95e66df1470b7c54217df177288ae0a0f7",
+  "jump": {
+    "idle_baseline": 203,
+    "jump_baselines": [
+      203,
+      193,
+      188,
+      193,
+      203
+    ],
+    "airborne_lift_pixels": 15,
+    "landing_delta_pixels": 0
+  },
+  "look_registration": {
+    "neutral_center_x": 95.0,
+    "look_centers_x": [
+      95.5,
+      92.0,
+      90.5,
+      87.5,
+      85.5,
+      85.5,
+      86.0,
+      87.5,
+      95.0,
+      98.5,
+      99.0,
+      100.5,
+      99.0,
+      97.5,
+      97.0,
+      97.5
+    ],
+    "look_widths": [
+      91,
+      86,
+      85,
+      87,
+      83,
+      81,
+      82,
+      85,
+      90,
+      89,
+      86,
+      85,
+      86,
+      89,
+      90,
+      89
+    ],
+    "maximum_center_drift_pixels": 9.5,
+    "maximum_width_ratio": 1.123456790123457
+  },
+  "errors": [],
+  "warnings": [
+    "look direction 067.5 accepted with a reviewed warning",
+    "look direction 157.5 accepted with a reviewed warning",
+    "look direction 247.5 accepted with a reviewed warning",
+    "000->022.5 diff is a local outlier (2032 pixels vs neighbor average 1322)",
+    "157.5->180 diff is a local outlier (2105 pixels vs neighbor average 1404)"
+  ],
+  "atlas": "spritesheet.png",
+  "check_scope": "Asset geometry and independently reviewed direction semantics; no account or runtime data included."
+}

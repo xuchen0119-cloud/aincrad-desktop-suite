@@ -1,0 +1,17 @@
+{
+  "version": "3.1.0",
+  "compiled": true,
+  "startupChecksPassed": 16,
+  "nativeCursorRolesValidated": 51,
+  "powerShellFilesParsed": 9,
+  "warmStartup": {
+    "launcherExitCode": 0,
+    "visibleSkinVerified": true,
+    "engineSeconds": 6.348,
+    "openingHandoffSeconds": 7.94,
+    "mode": "reuse"
+  },
+  "stateInspectionAfterInstall": "ready",
+  "newComputerColdInstallTested": false,
+  "note": "Aggregate verification only; no private logs or account/session objects included."
+}

@@ -1,8 +1,8 @@
 {
   "ok": true,
   "method": "Explicit source allowlist, clean PNG pixel re-encoding, filename/text/UTF-16/binary-string and nested-ZIP checks",
-  "files_checked": 10,
-  "image_metadata_checked": 4,
+  "files_checked": 181,
+  "image_metadata_checked": 43,
   "issues": [],
   "excluded_categories": [
     "accounts and credentials",

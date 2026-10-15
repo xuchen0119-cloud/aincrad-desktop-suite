@@ -1,0 +1,272 @@
+{
+  "Arrow": {
+    "file": "Arrow.cur",
+    "label": "默认指针",
+    "hotspot64": [
+      8,
+      6
+    ],
+    "sizes": [
+      32,
+      48,
+      64,
+      96,
+      128
+    ],
+    "frames": 1
+  },
+  "Hand": {
+    "file": "Hand.cur",
+    "label": "链接选择",
+    "hotspot64": [
+      8,
+      6
+    ],
+    "sizes": [
+      32,
+      48,
+      64,
+      96,
+      128
+    ],
+    "frames": 1
+  },
+  "IBeam": {
+    "file": "IBeam.cur",
+    "label": "文本选择",
+    "hotspot64": [
+      32,
+      32
+    ],
+    "sizes": [
+      32,
+      48,
+      64,
+      96,
+      128
+    ],
+    "frames": 1
+  },
+  "Wait": {
+    "file": "Wait.ani",
+    "label": "忙碌 · 动态",
+    "hotspot64": [
+      32,
+      32
+    ],
+    "sizes": [
+      32,
+      48,
+      64,
+      96
+    ],
+    "frames": 24
+  },
+  "AppStarting": {
+    "file": "AppStarting.ani",
+    "label": "后台运行 · 动态",
+    "hotspot64": [
+      8,
+      6
+    ],
+    "sizes": [
+      32,
+      48,
+      64,
+      96
+    ],
+    "frames": 24
+  },
+  "Help": {
+    "file": "Help.cur",
+    "label": "帮助选择",
+    "hotspot64": [
+      8,
+      6
+    ],
+    "sizes": [
+      32,
+      48,
+      64,
+      96,
+      128
+    ],
+    "frames": 1
+  },
+  "Crosshair": {
+    "file": "Crosshair.cur",
+    "label": "精确选择",
+    "hotspot64": [
+      32,
+      32
+    ],
+    "sizes": [
+      32,
+      48,
+      64,
+      96,
+      128
+    ],
+    "frames": 1
+  },
+  "NWPen": {
+    "file": "NWPen.cur",
+    "label": "手写",
+    "hotspot64": [
+      10,
+      54
+    ],
+    "sizes": [
+      32,
+      48,
+      64,
+      96,
+      128
+    ],
+    "frames": 1
+  },
+  "No": {
+    "file": "No.cur",
+    "label": "不可用",
+    "hotspot64": [
+      32,
+      32
+    ],
+    "sizes": [
+      32,
+      48,
+      64,
+      96,
+      128
+    ],
+    "frames": 1
+  },
+  "SizeNS": {
+    "file": "SizeNS.cur",
+    "label": "垂直调整",
+    "hotspot64": [
+      32,
+      32
+    ],
+    "sizes": [
+      32,
+      48,
+      64,
+      96,
+      128
+    ],
+    "frames": 1
+  },
+  "SizeWE": {
+    "file": "SizeWE.cur",
+    "label": "水平调整",
+    "hotspot64": [
+      32,
+      32
+    ],
+    "sizes": [
+      32,
+      48,
+      64,
+      96,
+      128
+    ],
+    "frames": 1
+  },
+  "SizeNWSE": {
+    "file": "SizeNWSE.cur",
+    "label": "对角调整 1",
+    "hotspot64": [
+      32,
+      32
+    ],
+    "sizes": [
+      32,
+      48,
+      64,
+      96,
+      128
+    ],
+    "frames": 1
+  },
+  "SizeNESW": {
+    "file": "SizeNESW.cur",
+    "label": "对角调整 2",
+    "hotspot64": [
+      32,
+      32
+    ],
+    "sizes": [
+      32,
+      48,
+      64,
+      96,
+      128
+    ],
+    "frames": 1
+  },
+  "SizeAll": {
+    "file": "SizeAll.cur",
+    "label": "移动",
+    "hotspot64": [
+      32,
+      32
+    ],
+    "sizes": [
+      32,
+      48,
+      64,
+      96,
+      128
+    ],
+    "frames": 1
+  },
+  "UpArrow": {
+    "file": "UpArrow.cur",
+    "label": "候选选择",
+    "hotspot64": [
+      32,
+      5
+    ],
+    "sizes": [
+      32,
+      48,
+      64,
+      96,
+      128
+    ],
+    "frames": 1
+  },
+  "Pin": {
+    "file": "Pin.cur",
+    "label": "位置选择",
+    "hotspot64": [
+      8,
+      6
+    ],
+    "sizes": [
+      32,
+      48,
+      64,
+      96,
+      128
+    ],
+    "frames": 1
+  },
+  "Person": {
+    "file": "Person.cur",
+    "label": "人物选择",
+    "hotspot64": [
+      8,
+      6
+    ],
+    "sizes": [
+      32,
+      48,
+      64,
+      96,
+      128
+    ],
+    "frames": 1
+  }
+}

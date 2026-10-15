@@ -1,0 +1,160 @@
+/* AINCRAD_UI_V27_BEGIN
+   Local native-shell styling. The theme-name gate keeps other skins unchanged.
+   Keep this outside theme.css: the public theme contract only styles whole parts.
+   No scripts, remote assets, filters on the wallpaper, or layout-height changes.
+*/
+@layer dreamskin-community {
+  html[data-dream-skin="active"][style*="艾恩葛朗特"] [data-ds-part="sidebar"] .sidebar-item {
+    border: 0 !important;
+    border-radius: 10px !important;
+    box-shadow: none !important;
+    transition: background-color 150ms ease, box-shadow 150ms ease !important;
+  }
+  html[data-dream-skin="active"][style*="艾恩葛朗特"] [data-ds-part="sidebar"] .sidebar-item:hover {
+    background: rgba(126,196,225,0.08) !important;
+    box-shadow: inset 0 0 0 1px rgba(151,207,231,0.10) !important;
+  }
+  html[data-dream-skin="active"][style*="艾恩葛朗特"] [data-ds-part="sidebar"]
+    .sidebar-item:is([aria-current="page"], [aria-selected="true"], [data-app-action-sidebar-thread-selected="true"], .bg-primary-ghost-hover, .bg-token-list-hover-background) {
+    background: linear-gradient(90deg,rgba(96,182,217,0.18),rgba(43,86,118,0.12)) !important;
+    border: 0 !important;
+    box-shadow: inset 2px 0 0 #8CDCF2, inset 0 0 0 1px rgba(150,210,234,0.20) !important;
+    color: #F0F8FC !important;
+  }
+  html[data-dream-skin="active"][style*="艾恩葛朗特"] [data-ds-part="sidebar"]
+    button[aria-current="page"] {
+    border: 0 !important;
+    border-radius: 10px !important;
+    background: rgba(125,203,232,0.13) !important;
+    box-shadow: inset 0 0 0 1px rgba(160,221,242,0.28) !important;
+  }
+  html[data-dream-skin="active"][style*="艾恩葛朗特"] [data-ds-part="sidebar"] .group\/section-toggle {
+    color: #A4BCCE !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.6px !important;
+  }
+  html[data-dream-skin="active"][style*="艾恩葛朗特"] [data-ds-part="sidebar"]
+    :is(button,a,.sidebar-item):focus-visible {
+    outline: 2px solid rgba(159,224,246,0.75) !important;
+    outline-offset: -2px !important;
+  }
+  /* The editable control is inside the composer: focus-within follows typing. */
+  html[data-dream-skin="active"][style*="艾恩葛朗特"] [data-ds-part="composer"]:focus-within {
+    border-color: rgba(166,225,247,0.76) !important;
+    --ds-community-composer-border-color: rgba(166,225,247,0.76) !important;
+    --ds-community-composer-border-top-color: rgba(166,225,247,0.76) !important;
+    box-shadow: 0 0 0 2px rgba(115,208,239,0.09), 0 8px 24px rgba(0,5,16,0.25) !important;
+  }
+  html[data-dream-skin="active"][style*="艾恩葛朗特"] [data-ds-part="composer"] [contenteditable="true"] {
+    caret-color: #A9E5F7 !important;
+  }
+  /* Only text gets a small contrast aid; message surfaces remain transparent. */
+  html[data-dream-skin="active"][style*="艾恩葛朗特"] [data-ds-part="message"]
+    :is(p,li,.markdown,[class*="_markdown"]) {
+    text-shadow: 0 1px 2px rgba(0,5,16,0.55);
+    line-height: 1.74;
+  }
+  /* Streaming replies and activity results have their own native boundaries;
+     the public message part only covers finalized replies and user bubbles. */
+  html[data-dream-skin="active"][style*="艾恩葛朗特"] .thread-scroll-container
+    [data-response-annotation-conversation][data-response-annotation-target] {
+    background: transparent !important;
+    backdrop-filter: none !important;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+  html[data-dream-skin="active"][style*="艾恩葛朗特"] .thread-scroll-container
+    [data-response-annotation-conversation] [data-markdown-text-style="assistant-message"] {
+    line-height: 1.74;
+    text-shadow: 0 1px 2px rgba(0,5,16,0.55);
+  }
+  html[data-dream-skin="active"][style*="艾恩葛朗特"] .thread-scroll-container
+    [data-local-conversation-item-target-ids] {
+    background: transparent !important;
+    backdrop-filter: none !important;
+    border-color: rgba(147,203,229,0.10) !important;
+    border-radius: 10px !important;
+    box-shadow: none !important;
+  }
+  html[data-dream-skin="active"][style*="艾恩葛朗特"] [role="menu"] {
+    background: rgba(8,19,33,0.97) !important;
+    border: 1px solid rgba(155,202,226,0.24) !important;
+    border-radius: 12px !important;
+    backdrop-filter: none !important;
+    box-shadow: 0 10px 28px rgba(0,4,15,0.34) !important;
+  }
+}
+/* The engine's Windows input blur lives in utilities, whose important rules
+   outrank the public theme layer. Override only this theme's outer input. */
+@layer utilities {
+  html[data-dream-skin="active"][style*="艾恩葛朗特"][data-codex-os="win32"]
+    [data-codex-composer-root][data-composer-placement="thread"] [data-ds-part="composer"] {
+    backdrop-filter: blur(12px) saturate(1.04) !important;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html[data-dream-skin="active"][style*="艾恩葛朗特"] :is(.sidebar-item,[data-ds-part="composer"]) {
+    transition: none !important;
+  }
+}
+/* Starfield sidebar and full-viewport inner frame. All artwork is the same
+   already-loaded local wallpaper; decorative chrome never receives input. */
+@layer dreamskin-community {
+  html[data-dream-skin="active"][style*="艾恩葛朗特"] [data-ds-part="sidebar"] {
+    background:
+      linear-gradient(180deg,rgba(5,18,34,0.62),rgba(6,22,39,0.30) 48%,rgba(3,13,27,0.62)),
+      var(--dream-skin-art) !important;
+    background-size: 100% 100%, auto 100% !important;
+    background-position: center, 20% center !important;
+    background-repeat: no-repeat !important;
+    backdrop-filter: none !important;
+    border-right: 1px solid rgba(146,212,237,0.32) !important;
+    box-shadow: inset -1px 0 0 rgba(211,240,250,0.10), 8px 0 24px rgba(0,7,20,0.12) !important;
+  }
+  html[data-dream-skin="active"][style*="艾恩葛朗特"] [data-ds-part="sidebar"]
+    :is(.sidebar-item,button,a) {
+    text-shadow: 0 1px 2px rgba(0,5,16,0.72);
+  }
+  html[data-dream-skin="active"][style*="艾恩葛朗特"] [data-ds-part="sidebar"] .group\/section-toggle {
+    color: #C0D7E7 !important;
+  }
+  html[data-dream-skin="active"][style*="艾恩葛朗特"] [data-ds-part="sidebar"]
+    .sidebar-item:is([aria-current="page"], [aria-selected="true"], [data-app-action-sidebar-thread-selected="true"], .bg-primary-ghost-hover, .bg-token-list-hover-background) {
+    background: linear-gradient(90deg,rgba(25,77,108,0.70),rgba(12,37,63,0.48)) !important;
+  }
+  html[data-dream-skin="active"][style*="艾恩葛朗特"] [data-ds-part="header"] {
+    border-bottom-color: rgba(150,213,237,0.18) !important;
+    box-shadow: inset 0 1px 0 rgba(211,238,250,0.03) !important;
+  }
+  html[data-dream-skin="active"][style*="艾恩葛朗特"][data-codex-os="win32"] body::after {
+    content: "";
+    position: fixed;
+    inset: 3px;
+    z-index: 2147483000;
+    pointer-events: none;
+    -webkit-app-region: initial;
+    border: 1px solid rgba(147,214,239,0.22);
+    border-radius: 9px;
+    background:
+      linear-gradient(90deg,rgba(182,235,253,0.82),rgba(136,212,242,0.16)) left top / 26px 1px no-repeat,
+      linear-gradient(180deg,rgba(182,235,253,0.82),rgba(136,212,242,0.16)) left top / 1px 26px no-repeat,
+      linear-gradient(270deg,rgba(182,235,253,0.82),rgba(136,212,242,0.16)) right top / 26px 1px no-repeat,
+      linear-gradient(180deg,rgba(182,235,253,0.82),rgba(136,212,242,0.16)) right top / 1px 26px no-repeat,
+      linear-gradient(90deg,rgba(139,215,244,0.65),rgba(136,212,242,0.10)) left bottom / 26px 1px no-repeat,
+      linear-gradient(0deg,rgba(139,215,244,0.65),rgba(136,212,242,0.10)) left bottom / 1px 26px no-repeat,
+      linear-gradient(270deg,rgba(139,215,244,0.65),rgba(136,212,242,0.10)) right bottom / 26px 1px no-repeat,
+      linear-gradient(0deg,rgba(139,215,244,0.65),rgba(136,212,242,0.10)) right bottom / 1px 26px no-repeat;
+    box-shadow: inset 0 0 0 1px rgba(5,19,35,0.20), 0 0 12px rgba(99,200,234,0.08);
+  }
+}
+@layer utilities {
+  html[data-dream-skin="active"][style*="艾恩葛朗特"][data-codex-os="win32"]
+    :is([class~="group/application-menu-top-bar"], [class*="_ApplicationMenuTopBar_"]) {
+    background: linear-gradient(90deg,rgba(7,27,44,0.88),rgba(19,52,75,0.70) 55%,rgba(9,24,40,0.76)) !important;
+    border-bottom: 1px solid rgba(155,219,242,0.22) !important;
+    box-shadow: inset 0 1px 0 rgba(219,244,252,0.08) !important;
+    backdrop-filter: none !important;
+  }
+}
+
+/* AINCRAD_UI_V27_END */

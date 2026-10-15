@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "local-sao-aincrad-link-start",
+  "name": "刀剑神域 · 雾光艾恩葛朗特",
+  "brandSubtitle": "AINCRAD / LINK START",
+  "tagline": "在这里，开启下一段冒险。",
+  "projectPrefix": "选择世界 · ",
+  "projectLabel": "选择项目",
+  "statusText": "AINCRAD ONLINE",
+  "quote": "让每一个想法，都成为新的起点。",
+  "image": "background.png",
+  "appearance": "dark",
+  "art": { "focusX": 0.79, "focusY": 0.43, "safeArea": "left", "taskMode": "ambient" },
+  "colors": {
+    "background": "rgba(5,12,26,0.48)", "panel": "rgba(10,22,38,0.68)", "panelAlt": "rgba(18,33,51,0.78)",
+    "accent": "#A4CFDF", "accentAlt": "#D9E8F1", "secondary": "#A6B5CD",
+    "highlight": "#ECE6D6", "text": "#EDF2FA", "muted": "#C3CDDD",
+    "line": "rgba(176,204,225,0.22)"
+  }
+}
